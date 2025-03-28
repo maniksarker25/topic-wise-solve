@@ -12,25 +12,23 @@ int main()
     for(int i = 0;i<n;i++){
         cin >> a[i];
     }
-    sort(a.begin(),a.end(),greater<int>());
 
     long long sum = 0;
     for(int i = 0;i<n;i++){
-        if(i == n-1){
-            if((sum + a[i]) % 2 == 0){
-                sum += a[i];
-            }
-            else {
-                break;
-            }
-        }
-       else {
         sum += a[i];
-       }
-
     }
 
-    cout << sum << endl;
- 
+    int minOdd = INT_MAX;
+    for(int i = 0;i<n;i++){
+        if(a[i] % 2 != 0){
+            minOdd = min(minOdd,a[i]);
+        }
+    }
+    if(sum %2 == 0){
+        cout << sum << endl;
+    }
+    else{
+        cout << sum - minOdd << endl;
+    }
     return 0;
 }
