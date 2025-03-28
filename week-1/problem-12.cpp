@@ -81,7 +81,14 @@ int main()
                 oneCount++;
             }
         }
-        
+        int spellNeed;
+        if(oneCount %2 == 0){
+            spellNeed = n - oneCount + oneCount / 2;
+        }else{
+            spellNeed = n -(oneCount -1) + oneCount / 2;
+        }
+
+        cout << spellNeed << endl;
 }
     return 0;
 }
