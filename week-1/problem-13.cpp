@@ -1,5 +1,5 @@
 // Cypher => https://codeforces.com/problemset/problem/1703/C
-
+//s
 #include <bits/stdc++.h>
 using namespace std;
 
