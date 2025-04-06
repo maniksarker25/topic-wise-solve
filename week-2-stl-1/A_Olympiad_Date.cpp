@@ -3,6 +3,8 @@ using namespace std;
 
 int main()
 {
-    cout << 'nice'<<endl;   
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    
     return 0;
 }
