@@ -8,31 +8,18 @@ int main()
     
     int n;
     cin >> n;
-
-
     vector<string>v(n);
 
     for(int i = 0;i<n;i++){
         cin >> v[i];
     }
 
-    reverse(v.begin(),v.end());
-
-
-    for(int i = 0;i<n;i++){
+    set<string>printed;
+    for(int i = v.size() -1;i>=0;i--){
+     if(printed.find(v[i]) == printed.end()){
         cout << v[i] << endl;
-    }
-
-    cout << endl;
-
-    unordered_set<string>friends;
-
-    for(int i = 0;i<n;i++){
-        friends.insert(v[i]);
-    }
-
-    for(auto frd : friends){
-        cout << frd << endl;
+        printed.insert(v[i]);
+     }
     }
     
     return 0;
