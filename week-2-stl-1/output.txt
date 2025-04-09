@@ -1,9 +1,6 @@
-i
-si
-fungi
-cacti
-sussi
-amogi
-chungi
-ntarsi
-skibidi
+OK
+first1
+OK
+second1
+OK
+third1
