@@ -1,5 +1,4 @@
-codeforces
-fft
-algorithm
-w
-meetinthemiddle
+YES
+YES
+NO
+YES
