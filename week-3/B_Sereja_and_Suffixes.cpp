@@ -16,17 +16,17 @@ int main()
         cin >> a[i];
         
     }
-    vector<int>ans(n+1);
+    vector<int>anss(n+1);
     set<int>s;
     for(int i = n;i>=1;i--){
         s.insert(a[i]);
-        ans[i] = s.size();
+        anss[i] = s.size();
     }
 
     for(int i = 1;i<=m;i++){
         int l;
         cin >> l;
-        cout << ans[l] << endl;
+        cout << anss[l] << endl;
     }
 
     return 0;
