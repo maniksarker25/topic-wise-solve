@@ -1,19 +1,5 @@
-3
-5
-3 5 2 1 3
 2
-abfda
-afbfa
-2
-1 2
-3
-ab
-abc
-aa
-4
-5 -3 5 -3
-4
-aaaa
-bcbc
-aba
-cbcb
+5 16
+1 2 8 4 8
+6 10
+2 8 8 2 2 8
