@@ -1,9 +1,3 @@
-4
 2
-aa
-3
-aba
-4
-abcb
-12
-abcabcabcabc
+2 3 4
+10 1 10
