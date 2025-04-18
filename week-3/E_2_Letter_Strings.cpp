@@ -17,7 +17,7 @@ int main()
         map<char,int> secondCharFreq;
         map<string, int> fullStringFreq;
 
-        int totalPairs = 0;
+        long long totalPairs = 0;
 
         for (int i = 0; i < n; i++) {
             string s;
