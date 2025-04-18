@@ -1,16 +1,23 @@
-int mn = INT_MAX,mx = INT_MIN;
-        for(int i = l;i<=r;i++){
-        mn = min(mn,v[i]);
-        mx = max(mx,v[i]);
-        }
-        if(v[l] == mn || v[l] == mx){
-            l++;
-        }
-        else if(v[r] == mn  || v[r] == mx){
-            r--;
-        }
-        else{
-            cout << l << ' ' << r << endl;
-            flag = true;
-            break;
-        }
+while(q--){
+        //     int d;
+        //     cin >> d;
+        //     if(d < teachers[0]){
+        //         int ans = teachers[0] - 1;
+        //         cout << ans << endl;
+        //         continue;
+        //     }
+        //     if(d > teachers[m-1]){
+        //         int ans = n - teachers[m-1];
+        //         cout << ans << endl;
+        //         continue;
+        //     }
+
+        //     auto it = lower_bound(teachers.begin(),teachers.end(),d);
+        //     auto it2 = it;
+        //     it2--;
+        //     int left = *it2, right = *it;
+        //     int mid = (right - left) / 2;
+        //     int ans = min(abs(mid-left),abs(mid-right));
+        //     cout << ans << endl;
+            
+        // }
