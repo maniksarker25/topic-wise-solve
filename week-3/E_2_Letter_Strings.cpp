@@ -1,3 +1,5 @@
+// Letter Strings => https://codeforces.com/problemset/problem/1669/E
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -5,32 +7,30 @@ int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
-    
     int t;
     cin >> t;
-    while(t--){
+    while (t--) {
         int n;
         cin >> n;
-        vector<string>v(n);
-        for(int i = 0;i<n;i++){
-            cin >> v[i];
-        }
-        long long int total_pair = 0;
-        for(int i = 0;i<n-1;i++){
-            for(int j = i +1;j<n;j++){
-                if(v[i][0] == v[j][0] && v[i][1] != v[j][1] ){
-                    total_pair++;
-                }
-                else if(v[i][0] != v[j][0] && v[i][1] == v[j][1]){
-                    total_pair++;
-                }
-            }
-        }
 
-        cout << total_pair << '\n';
+        map<char,int> firstCharFreq;
+        map<char,int> secondCharFreq;
+        map<string, int> fullStringFreq;
+
+        int totalPairs = 0;
+
+        for (int i = 0; i < n; i++) {
+            string s;
+            cin >> s;
+            totalPairs += firstCharFreq[s[0]];
+            totalPairs += secondCharFreq[s[1]];
+            totalPairs -= 2 * fullStringFreq[s];
+            firstCharFreq[s[0]]++;
+            secondCharFreq[s[1]]++;
+            fullStringFreq[s]++;
+        }
+        cout << totalPairs << endl;
     }
-
-
     return 0;
 }
 
@@ -72,3 +72,5 @@ int main()
 
 //     return 0;
 // }
+
+

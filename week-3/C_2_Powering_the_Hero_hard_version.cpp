@@ -14,10 +14,10 @@ int main()
     while(t--){
         int n;
         cin >> n;
-        priority_queue<int>pq;
-        int total = 0;
+        priority_queue<long long>pq;
+        long long total = 0;
         for(int i = 0;i<n;i++){
-            int x;
+            long long x;
             cin >> x;
             if(x != 0){
                 pq.push(x);

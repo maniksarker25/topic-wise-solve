@@ -1,11 +1,27 @@
-5
-5
-3 3 3 0 0
+4
 6
-0 3 3 0 0 3
+ab
+cb
+db
+aa
+cc
+ef
 7
-1 2 3 0 4 5 0
-7
-1 2 5 0 4 3 0
+aa
+bb
+cc
+ac
+ca
+bb
+aa
+4
+kk
+kk
+ab
+ab
 5
-3 1 0 0 4
+jf
+jf
+jk
+jk
+jk
