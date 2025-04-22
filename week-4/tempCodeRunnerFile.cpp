@@ -1,4 +1,3 @@
-        // for(int i = 0;i<n;i++){
-        //    cout << a[i] << " ";
-        // }
-        // cout << endl;
+ // if(mp.find(txt[l] != mp.end())){
+                //     mp[txt[l]] = 1;
+                // }
