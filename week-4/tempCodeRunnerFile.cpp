@@ -1,3 +1,7 @@
- // if(mp.find(txt[l] != mp.end())){
-                //     mp[txt[l]] = 1;
-                // }
+     if(b>=a){
+        total = a;
+        b = a;
+       }
+       else{
+        total = b;
+       }
