@@ -14,26 +14,21 @@ int main()
         cin >> a[i];
     }
 
-    int l = 0,r = 0;
-    int ans = INT_MAX;
-    long long sum = 0;
-    while(r<n){
-        sum += a[r];
-        if(sum >= s){
-            while(sum >= s){
-              ans =  min(ans,r-l+1);
-                sum -= a[l];
-                l++;
-            }
-        }
-        r++;
+    int l = 0,r=0;
+    long long current_sum = 0;
+    long long answer = 0;
+
+    while(r<n) {
+       current_sum += a[r];
+       while (current_sum >= s) {
+        answer += (n - r);
+        current_sum -= a[l];
+        l++;
+       }
+       r++;
     }
-    if(ans == INT_MAX){
-        cout << -1 <<endl;
-    }
-    else{
-        cout << ans <<endl;
-    }
+
+    cout << answer <<endl;
     
     return 0;
 }
