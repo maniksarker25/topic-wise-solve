@@ -1,0 +1,5 @@
+YES
+BBAABB
+NO
+YES
+BB
