@@ -12,6 +12,7 @@ int main()
         int x,y;
         cin >>x >>y;
         int sceenNeed = 0;
+        //
         while(x > 0 || y > 0){
             int twoSizeIconUse = min(2,y);
             int spaceLeft = 15 - twoSizeIconUse * 4;
