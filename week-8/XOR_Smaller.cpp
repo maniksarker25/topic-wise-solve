@@ -8,25 +8,20 @@ int main() {
     int t;
     cin >> t;
     while (t--) {
-        int n;
-        cin >> n;
-        vector<int> a(n);
-
-        int or_all = 0;
-        for (int i = 0; i < n; ++i) {
+        long long n;
+        cin >>n;
+        vector<long long>a(n);
+        for(int i = 0;i<n;i++){
             cin >> a[i];
-            or_all |= a[i]; 
+        }
+        long long ans = a[0];
+        for(int i = 1;i<n;i++){
+            ans &= a[i];
         }
 
-        int available_bits = 0;
-        for (int bit = 0; bit < 30; ++bit) {
-            if ((or_all & (1 << bit)) == 0) {
-                available_bits++;
-            }
-        }
+        cout << ans <<endl;
 
-        int result = (1 << available_bits) - 1;  
-        cout << result << endl;
+
     }
 
     return 0;
