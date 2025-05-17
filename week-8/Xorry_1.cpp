@@ -11,13 +11,10 @@ int main()
     while(t--){
         int x;
         cin >>x;
-        for(int b = 0;b<=x;b++){
-            int a = b ^ x;
-            if(a<=b && a>=0 && b <=x){
-                cout << a << " " << b << endl;
-                break;
-            }
-        }
+        int most_set_bit = __lg(x);
+        int b = (1 << most_set_bit);
+        int a = x - b;
+        cout << a << ' ' << b <<endl;
     }
     
     return 0;
