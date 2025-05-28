@@ -29,7 +29,7 @@ int main()
         }
 
         for(auto val : a){
-            cout << val << ' ';
+            cout << val << " ";
         }
         cout << endl;
     }
