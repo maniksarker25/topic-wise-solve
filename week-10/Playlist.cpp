@@ -12,20 +12,20 @@ int main()
     for(int i = 0;i<n;i++){
         cin >> a[i];
     }
-
     set<int>s;
-    int ans = 0;
-    for(int i = 0;i<n;i++){
-        if(s.find(a[i]) != s.end()){
-            int size = s.size();
-            ans = max(ans,size);
-            s.clear();
+    int i = 0,j=0,ans = 0;
+    while(i < n && j < n){
+        while(j < n && !s.count(a[j])){
+            s.insert(a[j]);
+            ans = max(ans,j-i+1);
+            j++;
         }
-        s.insert(a[i]); 
+        while(j < n && s.count(a[j])){
+            s.erase(a[i]);
+            i++;
+        }
     }
-    int size = s.size();
-    ans = max(ans,size);
-    cout << ans << endl;
+    cout << ans <<endl;
     
     return 0;
 }
