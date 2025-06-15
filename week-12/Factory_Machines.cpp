@@ -12,7 +12,7 @@ int main()
     for(int i = 0;i<n;i++){
         cin >> a[i];
     }
-
+    // lamda function =========
     auto ok = [&](long long seconds){
         long long totalProducts = 0;
         for(int i = 0;i<n;i++){
